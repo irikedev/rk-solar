@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <form method="POST" action="">
+            <button id="darkmode"><i class="fa-solid fa-moon"></i>Modo Escuro</button>
+            <h1 id="titulo">Faça login</h1>
+            <label for="emailInput">
+                <i class="fa-solid fa-envelope"></i><input type="email" name="" id="emailInput" required placeholder="voce@email.com">
+            </label>           
+            <label for="senhaInput">
+                <i class="fa-solid fa-lock"></i><input type="password" name="" id="senhaInput" required placeholder="********">
+            </label>
+            <label for="buttonLogin" id="btn"> <i class="fa-solid fa-arrow-right"></i><button type="submit" id="buttonLogin">Continuar</button></label>
+            <span>Não tem conta ainda?<a href="#" id="cadastroLink">se cadastre aqui!</a></span>
+        </form>
+    </body>
+
+    <script src="js/login.js"></script>
+</html>

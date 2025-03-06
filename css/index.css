@@ -1,0 +1,95 @@
+/* import*/
+@import url(login.css);
+@import url(home.css);
+
+
+
+
+
+:root{
+    --color-bg: #F3F4F6;
+    --color-el1: #00B0FF;
+    --color-el2: #FFFFFF;
+    --color-txt: #444444;
+
+    --darkmode-bg: #333;
+    --darkmode-txt: #f3f4f6;
+    --darkmode-el2: #706e6e;
+}
+
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  /* Remove a decoração dos links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Configura a aparência de listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Define a altura da linha para melhorar a legibilidade */
+  body {
+    line-height: 1.5;
+  }
+  
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo base para o corpo do site */
+  /* Títulos principais */
+  h1 {
+    font-size: 2.5rem; /* Tamanho grande para títulos principais */
+    font-weight: 600; /* Peso mais forte para destaque */
+  }
+  
+  /* Títulos secundários */
+  h2 {
+    font-size: 2rem; /* Tamanho menor que o h1, mas ainda proeminente */
+    font-weight: 600;
+
+  }
+  
+  /* Parágrafos */
+  p {
+    font-size: 1rem; /* Tamanho padrão de texto para parágrafos */
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+  }
+  
+  /* Títulos menores */
+  h3, h4, h5, h6 {
+    font-size: 1.5rem; /* Reduzindo o tamanho conforme a hierarquia */
+    font-weight: 600;
+
+  }
+  
+  /* Links */
+  a {
+    color: #007bff; /* Cor de links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #0056b3; /* Cor mais escura quando o link é focado */
+  }
+  
+  /* Texto pequeno */
+  small {
+    font-size: 0.875rem; /* Tamanho menor para textos secundários */
+    color: #777; /* Cor mais clara para textos de rodapé ou legais */
+  }
+  

@@ -1,0 +1,341 @@
+/*estilizando a tag main, classe cards, card. */
+main {
+    background: var(--color-bg);
+    padding: 5rem 0 3rem 0;
+
+    width: 95vw;
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    position: relative;
+}
+
+main h3 {
+    color: var(--color-el1);
+}
+
+main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .cards .card {
+    background-color: var(--color-bg);
+    color: var(--color-el1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0.5px solid var(--color-el1);
+
+    border-radius: 5px;
+    padding-top: 2rem;
+
+    width: 20rem;
+    height: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+main button {
+    background: var(--color-el1);
+    color: var(--color-bg);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+main .buttons button {
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    border: 2px solid var(--color-el1);
+}
+
+main .additem {
+    width: 100%;
+    height: 3rem;
+}
+
+main .additem input {
+    width: 50%;
+    height: 100%;
+    padding-left: 1rem;
+
+    border: 2px solid var(--color-el1);
+    background: transparent;
+    border-radius: 0 0 0 5px;
+}
+
+main .additem button {
+    height: 100%;
+    width: 50%;
+
+    border-radius: 0 0px 5px 0;
+}
+
+main .buttons button:hover {
+    background: transparent;
+    border: 2px solid var(--color-el1);
+    color: var(--color-txt);
+    transition: 250ms ease-in-out;
+}
+
+main .additem button:hover {
+    background: transparent;
+    border: 2px solid var(--color-el1);
+    border-left: none;
+    color: var(--color-txt);
+    transition: 250ms ease-in-out;
+}
+
+/*estilizando a classe header*/
+main .header {
+    backdrop-filter: blur(2px);
+    color: var(--color-el1);
+
+    width: 95%;
+    height: 4rem;
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .header .potenciometro {
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+}
+
+main #continuar {
+    margin-top: 2rem;
+    width: 95vw;
+    height: 3rem;
+
+    position: fixed;
+    bottom: 2rem;
+}
+main #avancar {
+    margin-top: 2rem;
+    width: 95vw;
+    height: 3rem;
+
+    position: fixed;
+    bottom: 2rem;
+}
+
+
+main .calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+
+}
+
+main .time {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .time label {
+    background: var(--color-el2);
+    border: 1px solid var(--color-el1);
+    color: var(--color-el1);
+    cursor: text;
+
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    width: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 1rem 0;
+
+}
+
+main .time input {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+main .time .calendario {
+    background-color: var(--color-bg);
+    color: var(--color-el1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0.5px solid var(--color-el1);
+
+    border-radius: 5px;
+    padding: 2rem;
+
+    width: 30rem;
+    height: 20rem;
+
+}
+
+main .calendario button:hover {
+    border: 2px solid var(--color-el1);
+}
+
+main .calendario button:hover {
+    background: transparent;
+    border: 2px solid var(--color-el1);
+    color: var(--color-txt);
+    transition: 250ms ease-in-out;
+}
+
+.bg-transparente {
+    background: transparent;
+    border: 2px solid var(--color-el1);
+    color: var(--color-txt);
+}
+
+main .cardsSolar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .cardsSolar .card {
+    background-color: var(--color-bg);
+    color: var(--color-txt);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0.5px solid var(--color-el1);
+
+    border-radius: 5px;
+    padding-top: 1rem;
+
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+main .cardsSolar .card button {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .cardsSolar p {
+    margin: 0 1rem;
+    font-weight: 600;
+    font-size: 11pt;
+}
+
+main .cardsSolar hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    /* Linha fina e cinza */
+    margin: 10px auto;
+    /* Espaçamento acima e abaixo */
+}
+
+main .cardsSolar h4 {
+    margin: 1rem;
+}
+
+
+main .header .carrinho .produtos {
+    border-radius: 5px;
+    border: 1px solid var(--color-el1);
+    backdrop-filter: blur(5px);
+
+    padding: 1rem;
+    margin-top: 1rem;
+
+    width: 25rem;
+    height: 20rem;
+
+    position: absolute;
+    left: 2rem;
+
+    display: none;
+    flex-direction: column;
+
+}
+main .header .carrinho .produtos .produtoItem{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.flex {display: flex!important}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+
+.loader {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 5px solid var(--color-el1);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

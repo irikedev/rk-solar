@@ -1,0 +1,108 @@
+body {
+    background: var(--color-el2);
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: var(--color-bg);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    padding: 2rem;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    position: relative;
+}
+form h1{color: var(--color-el1); margin: 1rem 0;}
+form label{
+    background: var(--color-el2);
+    border-right: 1px solid var(--color-el1);
+    cursor: text;
+
+    padding: 1rem;
+    border-radius: 5px;
+
+    width: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form input{
+    background: transparent;
+    outline: none;
+    border: none;
+
+
+    margin-left: 0.5rem;
+
+    color: var(--color-txt)
+}
+form button{
+    background: transparent;
+    border: none;
+
+    color: var(--color-txt);
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+form #btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    margin-top: 2rem;
+}
+form i{color: var(--color-txt);}
+
+form label:hover i{color: var(--color-el1);}
+form input:active i{color: var(--color-el1);}
+
+form span{
+    font-size: 10pt;
+}
+
+
+/* darkmode */
+
+#darkmode{
+    position: absolute;
+    top: -1rem;
+    left: 0;
+
+
+    background: var(--darkmode-bg);
+    color: var(--darkmode-txt);
+
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+#darkmode i{color: var(--darkmode-txt); margin-right: 0.50rem;}
+
+body.darkmode {background: var(--darkmode-bg);}
+
+body form.darkmode{
+background: var(--darkmode-el2);
+}
+body form label.darkmode{
+    background: var(--color-txt);
+    border-right: 1px solid var(--color-el1);
+}
+#darkmode.darkmode{background: var(--color-bg); color:var(--color-txt);}
+form h1.darkmode{color: var(--color-el1); margin: 1rem 0;}
+form input.darkmode{color: var(--darkmode-txt);}
+form button.darkmode{color: var(--darkmode-txt);}
+form h1.darkmode{color: var(--darkmode-txt);}
+form i.darkmode{color: var(--darkmode-txt);}
+form span.darkmode{color: var(--darkmode-txt);}
